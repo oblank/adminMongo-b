@@ -63,7 +63,7 @@ $(document).ready(function() {
             }
             else if ( key_name.toString().toLowerCase() == "_id") {
                if (!val.match(objectIdReg))  {
-                   val = "ObjectId(\"" + val.toString() + "\")";
+                   val = {"$oid" : val.toString()};
                }
             }
             else{
