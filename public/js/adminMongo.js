@@ -57,9 +57,16 @@ $(document).ready(function() {
 
             // check if value is a number/integer
             var intReg = new RegExp('^[0-9]+$');
+            var objectIdReg = new RegExp('^ObjectId[\(\)a-z0-9A-Z]+$');
             if(val.match(intReg)){
                 val = parseInt(val);
-            }else{
+            }
+            else if ( key_name.toString().toLowerCase() == "_id") {
+               if (!val.match(objectIdReg))  {
+                   val = "ObjectId(\"" + val.toString() + "\")";
+               }
+            }
+            else{
             // if we find an integer wrapped in quotes
                 var strIntReg = new RegExp('^"[0-9]"+$');
                 if(val.match(strIntReg)){
