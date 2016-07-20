@@ -80,7 +80,7 @@
                         {{#each sidebar_list}}
                             <li class="list-group-item"><i class="fa fa-database"></i>&nbsp; <a href="{{app_context}}/{{../conn_name}}/{{@key}}">{{@key}}</a></li>
                             {{#each this}}
-                                <li class="list-group-item coll_indent">&nbsp;&nbsp;&nbsp;<i class="fa fa-table"></i>&nbsp;&nbsp;&nbsp;<a href="{{app_context}}/{{../../conn_name}}/{{@../key}}/{{this}}/view">{{this}}</a></li>
+                                <li class="list-group-item coll_indent">&nbsp;&nbsp;<a href="{{app_context}}/{{../../conn_name}}/{{@../key}}/{{this}}/view">{{this}}</a></li>
                             {{/each}}
                         {{/each}}
                     </ul>

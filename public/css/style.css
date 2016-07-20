@@ -33,7 +33,7 @@ body {
 }
 
 .coll_indent{
-    padding-left: 35px;
+   /** padding-left: 35px;**/
 }
 
 .index_json{
@@ -87,6 +87,10 @@ body {
     margin-bottom: 15px;
 }
 
+.list-group-item{
+  padding: 5px 0px !important;
+}
+
 .list-group-item a {
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -97,7 +101,7 @@ body {
 }
 
 .doc_view{
-    max-height: 120px;
+    /**max-height: 120px;**/
     min-height: 120px;
     overflow: auto
 }

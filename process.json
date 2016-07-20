@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "name": "admin-mongo",
+      "script": "app.js",
+      "watch": false,
+      "error_file": "/data/logs/nodes/admin-mongo-error.log",
+      "out_file": "/data/logs/nodes/admin-mongo-out.log",
+    }
+  ]
+}
