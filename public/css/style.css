@@ -101,7 +101,7 @@ body {
 }
 
 .doc_view{
-    /**max-height: 120px;**/
+    max-height: 240px;
     min-height: 120px;
     overflow: auto
 }
